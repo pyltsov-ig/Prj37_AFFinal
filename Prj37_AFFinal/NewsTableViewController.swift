@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SDWebImage
 
 class NewsTableViewController: UITableViewController {
     
@@ -18,6 +19,7 @@ class NewsTableViewController: UITableViewController {
         print("Start data downloading...")
         self.downloadNews {
             print("Finish data dawnloading")
+            self.tableView.reloadData()
         }
 
 
@@ -61,15 +63,23 @@ class NewsTableViewController: UITableViewController {
         return newsArticlesArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NewsTableViewCell
 
-        // Configure the cell...
+        let cellTitle = newsArticlesArray[indexPath.row].title
+        cell.newsTitle.text = cellTitle
+        let cellImgUrl = newsArticlesArray[indexPath.row].urlToImage
+        guard let unwrImgURL = URL(string: cellImgUrl) else {return cell}
+        cell.newsImage.sd_setImage(with: unwrImgURL, placeholderImage: nil, options: [.continueInBackground, .progressiveLoad], completed: nil)
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        100
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
