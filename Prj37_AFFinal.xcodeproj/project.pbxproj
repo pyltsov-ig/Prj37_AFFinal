@@ -15,7 +15,6 @@
 		7875A9B2267220AB0074266C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7875A9B0267220AB0074266C /* Main.storyboard */; };
 		7875A9B4267220AE0074266C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7875A9B3267220AE0074266C /* Assets.xcassets */; };
 		7875A9B7267220AE0074266C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7875A9B5267220AE0074266C /* LaunchScreen.storyboard */; };
-		78FAD5882673B7AB000C8C22 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAD5872673B7AA000C8C22 /* News.swift */; };
 		78FAD5902673BD6D000C8C22 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAD58F2673BD6D000C8C22 /* NewsModel.swift */; };
 		B220A5512EC27DEAEDFD1A57 /* Pods_Prj37_AFFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EA6EEA50A1C6AD11604661 /* Pods_Prj37_AFFinal.framework */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		7875A9B3267220AE0074266C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7875A9B6267220AE0074266C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7875A9B8267220AE0074266C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78FAD5872673B7AA000C8C22 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		78FAD58F2673BD6D000C8C22 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		A6EA6EEA50A1C6AD11604661 /* Pods_Prj37_AFFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prj37_AFFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE018FA0F49D77BD1EC280FC /* Pods-Prj37_AFFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prj37_AFFinal.release.xcconfig"; path = "Target Support Files/Pods-Prj37_AFFinal/Pods-Prj37_AFFinal.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 		7875A9A9267220AB0074266C /* Prj37_AFFinal */ = {
 			isa = PBXGroup;
 			children = (
-				78FAD5872673B7AA000C8C22 /* News.swift */,
 				7875A9AA267220AB0074266C /* AppDelegate.swift */,
 				7875A9AC267220AB0074266C /* SceneDelegate.swift */,
 				780F04462674BAEE0049C965 /* NewsTableViewController.swift */,
@@ -219,7 +216,6 @@
 			files = (
 				7875A9AB267220AB0074266C /* AppDelegate.swift in Sources */,
 				780F04522674C18B0049C965 /* NewsTableViewCell.swift in Sources */,
-				78FAD5882673B7AB000C8C22 /* News.swift in Sources */,
 				7875A9AD267220AB0074266C /* SceneDelegate.swift in Sources */,
 				78FAD5902673BD6D000C8C22 /* NewsModel.swift in Sources */,
 				780F04472674BAEE0049C965 /* NewsTableViewController.swift in Sources */,

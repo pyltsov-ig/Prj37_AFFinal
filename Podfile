@@ -6,7 +6,7 @@ target 'Prj37_AFFinal' do
   use_frameworks!
 
   pod 'Alamofire'
-  pod 'ObjectMapper'
+  #pod 'ObjectMapper'
   #pod 'RealmSwift'
   #pod 'AlamofireObjectMapper'
   pod 'SwiftyJSON'
